@@ -7,7 +7,7 @@ namespace AutomatedTellerMachine.Models
 {
     public class CheckingAccount
     {
-
+        //Random comment for testing git
         public int Id { get; set; }
         public string AccountNumber { get; set; }
         public string FirstName { get; set; }

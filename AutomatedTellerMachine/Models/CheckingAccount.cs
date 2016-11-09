@@ -13,6 +13,8 @@ namespace AutomatedTellerMachine.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public decimal Balance { get; set; }
+        public virtual ApplicationUser User { get; set; }   //This SHOULD be the fk
+        public string ApplicatinUserID { get; set; }
 
     }
 }

@@ -175,10 +175,24 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CheckingAccounts1Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611090257567_InitialCreate.cs" />
+    <Compile Include="Migrations\201611090257567_InitialCreate.Designer.cs">
+      <DependentUpon>201611090257567_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611091717043_UpdatedCheckingAccountModel.cs" />
+    <Compile Include="Migrations\201611091717043_UpdatedCheckingAccountModel.Designer.cs">
+      <DependentUpon>201611091717043_UpdatedCheckingAccountModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611091741452_Another.cs" />
+    <Compile Include="Migrations\201611091741452_Another.Designer.cs">
+      <DependentUpon>201611091741452_Another.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CheckingAccount.cs" />
     <Compile Include="Models\CheckingAccountController.cs" />
@@ -252,6 +266,11 @@
     <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\CheckingAccount\Details.cshtml" />
+    <Content Include="Views\CheckingAccounts1\Create.cshtml" />
+    <Content Include="Views\CheckingAccounts1\Delete.cshtml" />
+    <Content Include="Views\CheckingAccounts1\Details.cshtml" />
+    <Content Include="Views\CheckingAccounts1\Edit.cshtml" />
+    <Content Include="Views\CheckingAccounts1\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -261,6 +280,17 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611090257567_InitialCreate.resx">
+      <DependentUpon>201611090257567_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611091717043_UpdatedCheckingAccountModel.resx">
+      <DependentUpon>201611091717043_UpdatedCheckingAccountModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611091741452_Another.resx">
+      <DependentUpon>201611091741452_Another.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

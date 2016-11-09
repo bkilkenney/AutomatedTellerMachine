@@ -28,5 +28,7 @@ namespace AutomatedTellerMachine.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<AutomatedTellerMachine.Models.CheckingAccount> CheckingAccounts { get; set; }
     }
 }

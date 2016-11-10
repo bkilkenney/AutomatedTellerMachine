@@ -11,6 +11,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Owin;
 using AutomatedTellerMachine.Models;
+using AutomatedTellerMachine.Services;
 
 namespace AutomatedTellerMachine.Controllers
 {
@@ -94,19 +95,8 @@ namespace AutomatedTellerMachine.Controllers
                 IdentityResult result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    var db = new ApplicationDbContext();
-                    var accountNumber = (123456 + db.CheckingAccounts.Count()).ToString().PadLeft(10, '0');
-                    var checkingAccount = new CheckingAccount
-                    {
-                        FirstName = model.FirstName,
-                        LastName = model.LastName,
-                        AccountNumber =
-                        accountNumber,
-                        Balance = 0,
-                        ApplicationUserId = user.Id
-                    };
-                    db.CheckingAccounts.Add(checkingAccount);
-                    db.SaveChanges();
+                    var service = new CheckingAccountService(HttpContext.GetOwinContext().Get<ApplicationDbContext>());
+                    service.CreateCheckingAccount(model.FirstName, model.LastName, user.Id, 0);
                     
                     await SignInAsync(user, isPersistent: false);
 
@@ -426,6 +416,8 @@ namespace AutomatedTellerMachine.Controllers
                     result = await UserManager.AddLoginAsync(user.Id, info.Login);
                     if (result.Succeeded)
                     {
+                        var service = new CheckingAccountService(HttpContext.GetOwinContext().Get<ApplicationDbContext>());
+                        service.CreateCheckingAccount("Facebook", "User", user.Id, 500);
                         await SignInAsync(user, isPersistent: false);
                         
                         // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
@@ -483,6 +475,7 @@ namespace AutomatedTellerMachine.Controllers
         #region Helpers
         // Used for XSRF protection when adding external logins
         private const string XsrfKey = "XsrfId";
+        private readonly string userId;
 
         private IAuthenticationManager AuthenticationManager
         {

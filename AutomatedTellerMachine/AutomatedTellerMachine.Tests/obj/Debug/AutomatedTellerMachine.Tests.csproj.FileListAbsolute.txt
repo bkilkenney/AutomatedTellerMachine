@@ -131,3 +131,5 @@ C:\Users\bkilkenney\Documents\Visual Studio 2015\Projects\AutomatedTellerMachine
 C:\Users\bkilkenney\Documents\Visual Studio 2015\Projects\AutomatedTellerMachine\AutomatedTellerMachine\AutomatedTellerMachine.Tests\obj\Debug\AutomatedTellerMachine.Tests.csprojResolveAssemblyReference.cache
 C:\Users\bkilkenney\Documents\Visual Studio 2015\Projects\AutomatedTellerMachine\AutomatedTellerMachine\AutomatedTellerMachine.Tests\obj\Debug\AutomatedTellerMachine.Tests.dll
 C:\Users\bkilkenney\Documents\Visual Studio 2015\Projects\AutomatedTellerMachine\AutomatedTellerMachine\AutomatedTellerMachine.Tests\obj\Debug\AutomatedTellerMachine.Tests.pdb
+C:\Users\bkilkenney\Documents\Visual Studio 2015\Projects\AutomatedTellerMachine\AutomatedTellerMachine\AutomatedTellerMachine.Tests\bin\Debug\Microsoft.Owin.Security.Facebook.dll
+C:\Users\bkilkenney\Documents\Visual Studio 2015\Projects\AutomatedTellerMachine\AutomatedTellerMachine\AutomatedTellerMachine.Tests\bin\Debug\Microsoft.Owin.Security.Facebook.xml

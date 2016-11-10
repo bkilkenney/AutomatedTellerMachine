@@ -222,3 +222,7 @@ C:\Users\bkilkenney\Documents\Visual Studio 2015\Projects\AutomatedTellerMachine
 C:\Users\bkilkenney\Documents\Visual Studio 2015\Projects\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.Migrations.UpdatedCheckingAccountModel.resources
 C:\Users\bkilkenney\Documents\Visual Studio 2015\Projects\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.csproj.GenerateResource.Cache
 C:\Users\bkilkenney\Documents\Visual Studio 2015\Projects\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.Migrations.Another.resources
+C:\Users\bkilkenney\Documents\Visual Studio 2015\Projects\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.Migrations.CheckingAccountControllerAdded.resources
+C:\Users\bkilkenney\Documents\Visual Studio 2015\Projects\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.Migrations.TryingAgain.resources
+C:\Users\bkilkenney\Documents\Visual Studio 2015\Projects\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.Migrations.AccountNumberChanges.resources
+C:\Users\bkilkenney\Documents\Visual Studio 2015\Projects\AutomatedTellerMachine\AutomatedTellerMachine\obj\Debug\AutomatedTellerMachine.Migrations.Automaticmigrationdidntworkyet.resources

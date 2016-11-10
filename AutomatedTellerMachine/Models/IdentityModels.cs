@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.Data.Entity;
 
 namespace AutomatedTellerMachine.Models
 {
@@ -29,6 +30,8 @@ namespace AutomatedTellerMachine.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<AutomatedTellerMachine.Models.CheckingAccount> CheckingAccounts { get; set; }
+        public DbSet<CheckingAccount> CheckingAccounts { get; set; }
+
+        //public DbSet<CheckingAccount> CheckingAccounts { get; set; }
     }
 }

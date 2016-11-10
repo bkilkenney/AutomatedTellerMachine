@@ -16,7 +16,7 @@ namespace AutomatedTellerMachine.Migrations
                         FirstName = c.String(),
                         LastName = c.String(),
                         Balance = c.Decimal(nullable: false, precision: 18, scale: 2),
-                        ApplicatinUserID = c.String(),
+                        ApplicationUserID = c.String(),
                         User_Id = c.String(maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id)
